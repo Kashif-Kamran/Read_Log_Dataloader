@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.cassandra.CqlSessionBuilderCustomi
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
-import connection.DataStaxAstraProperties;
+import io.project.betterreadsdataloader.connection.DataStaxAstraProperties;
 
 @SpringBootApplication
 @EnableConfigurationProperties(DataStaxAstraProperties.class)
