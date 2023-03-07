@@ -1,10 +1,15 @@
+spring.application.name: betterreads-data-loader
+datadump.location:
+  author: D:\web_development\dataFiles\test-authors.txt
+  works : D:\web_development\dataFiles\test-works.txt
+
 spring:
     data:
         cassandra:
-          keyspace: main
+          keyspace-name: main
           username: jUworIJGpgzrAuIQXcDmiUFq
           password: la0GI,1DbkOrdEtSSfkBx.qGO-G2sz-j2fQKNZO_MPOwxEspqpzN98fcuTmLkmv.gK9MunSm1-dh2L4B6USYQZ_F-zAN33R6hk_Z5uZS,NjAOocRdmIU6Cskg_.GK46T
-          schema-action: create-if-not-exists
+          schema-action: recreate
           request:
             timeout: 10s
           connection:
